@@ -21,7 +21,7 @@ export default function Carousal(props) {
     offset.current = 0;
     inputEl.current.style.transform = `translateX(${offset.current}px)`;
     max = -parseInt((by3 * (props.array.length + 1 - 3)));
-    setActive(1)
+    setActive(1);
   }, [props.array])
 
   const moveLeft = () => {

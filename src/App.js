@@ -14,12 +14,9 @@ export default function App() {
     { pName: 'product 8', cost: 'Rs. 12', cat: 'food' },
     { pName: 'product 9', cost: 'Rs. 320', cat: 'electronics' },
     { pName: 'product 10', cost: 'Rs. 320', cat: 'electronics' }]);
+
   const categoryArray = [...new Set(array.map(item => item.cat))];
   const [selectedCat, setCat] = useState('All')
-
-  useEffect(() => {
-
-  }, [selectedCat]);
 
   return (
     <>
